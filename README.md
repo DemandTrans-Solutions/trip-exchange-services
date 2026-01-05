@@ -361,7 +361,7 @@ Common deployment issues:
 
 2. **ECR Authentication**: If you can't push to ECR, ensure your AWS credentials are properly configured:
    ```bash
-   aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 750446117464.dkr.ecr.us-east-1.amazonaws.com
+   aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin .dkr.ecr.us-east-1.amazonaws.com
    ```
 
 3. **Docker Buildx**: If buildx commands fail, ensure Docker Desktop is properly configured for multi-architecture builds:
